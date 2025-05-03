@@ -171,7 +171,7 @@ function showResult() {
   typeEl.innerHTML = `<strong>${type.type}</strong><br>${type.message}`;
   resultEl.classList.add("visible");
   resultEl.style.display = "block";
-  const tweetText = encodeURIComponent(`SNS冷笑度診断☆冷笑度: ${percent}%☆タイプ: ${type.type}☆${type.message}☆診断はこちら→ https://nimonimonnimono.github.io/reisho-checker/`);
+  const tweetText = encodeURIComponent(`SNS冷笑度診断☆冷笑度: ${percent}%☆タイプ: ${type.type}☆${type.message}`);
 tweetBtn.href = `https://twitter.com/intent/tweet?text=${tweetText}&hashtags=冷笑度診断`;
   tweetBtn.href = `https://twitter.com/intent/tweet?text=${tweetText}`;
 }
